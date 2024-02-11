@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+section {
+  width: 100%;
+  background-image: url(../login/loginImage/back2.jpg);
+  background-size: cover;
+  background-position: 0px -140px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 100px;
+  min-height: 120vh;
+  overflow: hidden;
+}
+/* navigation bar */
+nav {
+  width: 90%;
+  display: flex;
+  padding: 1% 6%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.5);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul ul {
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+nav ul li ul li {
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul li ul li a {
+  padding: 5px 10px;
+  color: #000;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li ul li a:hover {
+  color: #fff;
+}
+
+nav p {
+  color: white;
+}
+.nav-links {
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: lightblue;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+nav .fa {
+  display: none;
+}
+.Form-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  backdrop-filter: blur(40px);
+  color: white;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.6s ease, height 0.2s ease-in-out;
+  margin-right: 30px;
+}
+
+.Form-box form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+
+.Form-box .Register-form {
+  transform: translateX(-100%);
+}
+
+.input-box {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 2px solid white;
+  margin: 40px 0px;
+}
+
+.Register-form .input-box {
+  margin: 30px 0px;
+}
+
+.input-box input {
+  width: 90%;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.input-box label {
+  transition: 0.4s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  transform: translateY(-25px);
+}
+
+.input-box ion-icon {
+  font-size: 25px;
+}
+
+.checkbox {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Register-form .checkbox {
+  display: unset;
+}
+
+.submit-btn {
+  width: 80%;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 20px 0px;
+  border: none;
+  font-size: 16px;
+}
+.submit-btn:hover {
+  background-color: lightblue;
+  transition: 0.9s;
+}
+.Form-box h5,
+.checkbox label,
+.checkbox input {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.change-form {
+  height: 500px;
+}
+
+.change-form .Login-form {
+  transform: translateX(100%);
+}
+
+.change-form .Register-form {
+  transform: translateX(0%);
+}
+
+.scroll {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.scroll.show {
+  opacity: 1;
+}
+
+.fa-arrow-up {
+  color: white;
+  background-color: rgba(51, 51, 51, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+}
+footer .container {
+  max-width: 1170px;
+  margin: auto;
+  width: 80%;
+}
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer ul {
+  list-style: none;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: lightblue;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+@media (max-width: 700px) {
+  /* navigation bar */
+  nav {
+    background-color: rgba(51, 51, 51, 0.5);
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(51, 51, 51, 0.8);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    transition: 1s;
+  }
+  .nav-links ul li a {
+    font-size: 15px;
+  }
+
+  nav .fa {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  .for i {
+    position: absolute;
+    top: 8%;
+    right: 30px;
+    font-size: 20px;
+    transform: translateY(-50%);
+  }
+
+  .Form-box {
+    margin: auto 20px;
+  }
+  .footer-col .social-links a {
+    height: 36px;
+    width: 32px;
+    font-size: 15px;
+  }
+  .footer-col {
+    padding: 10px;
+    width: 100%;
+  }
+  .Form-box h5,
+  .checkbox label,
+  .checkbox input {
+    font-size: 11px;
+  }
+  section {
+    min-height: 90vh;
+  }
+}

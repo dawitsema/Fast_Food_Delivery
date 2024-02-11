@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fast Food</title>
+    <link rel="icon" href="../login/loginImage/logo.png" />
+    <link rel="stylesheet" href="login.css" />
+    <!-- Link to the Font-Awesome Font -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"
+    />
+    <!-- Link to the cloudflare Font -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!-- Link to Montserrat font from Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <p><i class="fas fa-handshake"></i>Fast Food Delivery</p>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+
+        <ul>
+          <li><a href="../HomePage/home.html">Home</a></li>
+          <li><a href="../about/about.html">About</a></li>
+          <li>
+            <a href="">Cafteria's</a>
+            <ul
+              style="
+                background-color: rgba(51, 51, 51, 0.5);
+                position: absolute;
+                top: 100%;
+                left: 0;
+              "
+            >
+              <li>
+                <a href="../KK/kk.html">KK Yellow</a>
+              </li>
+              <li>
+                <a href="../Teachers/teachers.html">Teacher's</a>
+              </li>
+              <li>
+                <a href="../Kibnesh/kibnesh.html">Kibnesh</a>
+              </li>
+              <li>
+                <a href="../aplus/aplus.html">A+ Plus</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../login/login.html">Login</a></li>
+          <li><a href="../Contact/contact.html">Conact Us</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <section>
+      <div class="Form-box">
+        <form class="Login-form">
+          <h1>Login</h1>
+          <div class="input-box">
+            <input type="text" required />
+            <label>Email</label>
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+          <div class="input-box">
+            <input type="password" required />
+            <label>Password</label>
+            <ion-icon name="lock-closed-outline"></ion-icon>
+          </div>
+          <div class="checkbox">
+            <span>
+              <input type="checkbox" id="login-checkbox" />
+              <label for="login-checkbox">Remember Me</label>
+            </span>
+            <h5>Forget password ?</h5>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+          <h5 class="Register-btn">Dont have an account? Register</h5>
+        </form>
+        <form class="Register-form">
+          <h1>Register</h1>
+          <div class="input-box">
+            <input type="text" required />
+            <label>Username</label>
+            <ion-icon name="person-outline"></ion-icon>
+          </div>
+          <div class="input-box">
+            <input type="text" required />
+            <label>Email</label>
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+          <div class="input-box">
+            <input type="password" required />
+            <label>Password</label>
+            <ion-icon name="lock-closed-outline"></ion-icon>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="register-checkbox" />
+            <label for="register-checkbox"
+              >I agree to the terms & conditions</label
+            >
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+          <h5 class="Login-btn">Register before? Login</h5>
+        </form>
+      </div>
+    </section>
+    <a href="#top" class="scroll"
+      ><i class="fa fa-arrow-up" aria-hidden="true"></i
+    ></a>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Fast Food</h4>
+            <ul>
+              <li><a href="../about/about.html">about us</a></li>
+              <li><a href="../about/about.html">our services</a></li>
+              <li><a href="../about/about.html">privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="../about/about.html">FAQ</a></li>
+              <li><a href="../about/about.html">order status</a></li>
+              <li><a href="../about/about.html">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Cafteria's</h4>
+            <ul>
+              <li><a href="../Kibnesh/kibnesh.html">Kibnesh</a></li>
+              <li><a href="../KK/kk.html">KK Yellow</a></li>
+              <li><a href="../Aplus/aplus.html">A+ PLus</a></li>
+              <li>
+                <a href="../Teachers/teachers.html">Teacher's</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/dawitsema.sema/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/dawit_sema/?hl=en"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/dawit-sema-4009422aa/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="login.js"></script>
+  </body>
+</html>
